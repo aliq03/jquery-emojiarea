@@ -29,8 +29,8 @@
 		icons: {},
 		defaults: {
 			button: null,
-			buttonLabel: 'Emojis',
-			buttonPosition: 'after'
+			buttonLabel: 'Emoji',
+			buttonPosition: 'before'
 		}
 	};
 
