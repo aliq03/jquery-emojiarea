@@ -249,6 +249,7 @@
 		this.$editor = $('<div>').addClass('emoji-wysiwyg-editor');
 		this.$editor.text($textarea.val());
 		this.$editor.attr({contenteditable: 'true'});
+		this.$editor.attr({placeholder: 'Cevap yaz...'});
 		this.$editor.on('blur keyup paste', function() { return self.onChange.apply(self, arguments); });
 		this.$editor.on('mousedown focus', function() { document.execCommand('enableObjectResizing', false, false); });
 		this.$editor.on('blur', function() { document.execCommand('enableObjectResizing', true, true); });
